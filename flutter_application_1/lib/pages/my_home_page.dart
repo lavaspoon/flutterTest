@@ -12,17 +12,10 @@ class MyHomePage extends StatelessWidget {
         title: const Text("AppBar MyHomePage"),
       ),
       body: Container(
-        color: Colors.yellow,
-        alignment: const Alignment(0, -1),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 30,
+        margin: EdgeInsets.only(top: 5, left: 10, right: 10),
+        child: Container(
+          color: Colors.green,
         ),
-        margin: const EdgeInsets.symmetric(
-          horizontal: 50,
-          vertical: 50,
-        ),
-        child: const Text("MyHomePage"),
       ),
     );
   }

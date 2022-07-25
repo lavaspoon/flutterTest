@@ -9,8 +9,37 @@ class LavaHomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Lava Home Page"),
         ),
-        body: const Center(
-          child: Text('center'),
+        body: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              color: Colors.red,
+              alignment: Alignment.center,
+              width: 100,
+              height: 20,
+              child: const Text(
+                "1",
+              ),
+            ),
+            Container(
+              color: Colors.green,
+              alignment: Alignment.center,
+              width: 100,
+              height: 30,
+              child: const Text(
+                "1",
+              ),
+            ),
+            Container(
+              color: Colors.yellow,
+              alignment: Alignment.center,
+              width: 100,
+              height: 100,
+              child: const Text(
+                "1",
+              ),
+            ),
+          ],
         ));
   }
 }
