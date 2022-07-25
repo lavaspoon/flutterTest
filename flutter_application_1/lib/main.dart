@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/lava_home_page.dart';
+import 'pages/my_home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LavaHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
