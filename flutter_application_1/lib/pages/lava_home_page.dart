@@ -9,11 +9,42 @@ class LavaHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("AppBar MyHomePage"),
       ),
-      body: Container(
-        margin: EdgeInsets.only(top: 5, left: 10, right: 10),
-        child: Container(
-          color: Colors.green,
-        ),
+      body: Column(
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                print('ElevatedButton');
+              },
+              onLongPress: () {
+                print('onLongPress ElevatedButton');
+              },
+              child: const Text('ElevatedButton')),
+          ElevatedButton(
+              onPressed: () {
+                print('ElevatedButton Grey');
+              },
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey, onPrimary: Colors.white),
+              child: const Text('ElevatedButton Grey')),
+          OutlinedButton(
+              onPressed: () {
+                print('OutlinedButton');
+              },
+              style: OutlinedButton.styleFrom(
+                primary: Colors.purple,
+              ),
+              child: const Text('OutlinedButton')),
+          TextButton(
+              onPressed: () {
+                print('TextButton');
+              },
+              child: const Text('TextButton')),
+          GestureDetector(
+              onTap: () {
+                print('GestureDetector');
+              },
+              child: const Text('GestureDetector')),
+        ],
       ),
     );
   }
