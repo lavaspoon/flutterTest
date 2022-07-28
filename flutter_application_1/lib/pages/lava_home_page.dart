@@ -7,10 +7,15 @@ class LavaHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Lava Home Page"),
+          title: const Text("LavaHome"),
         ),
-        body: const Center(
-          child: Text('center'),
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            color: Colors.green,
+            height: 200,
+            width: 200,
+          ),
         ));
   }
 }
