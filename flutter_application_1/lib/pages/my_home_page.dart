@@ -11,11 +11,43 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("AppBar MyHomePage"),
       ),
-      body: Container(
-        margin: EdgeInsets.only(top: 5, left: 10, right: 10),
-        child: Container(
-          color: Colors.green,
-        ),
+      body: Row(
+        children: [
+          Container(
+            child: Container(
+              color: Colors.green,
+              width: 40,
+              height: 40,
+            ),
+          ),
+          Container(
+            child: Container(
+              color: Colors.yellow,
+              width: 40,
+              height: 40,
+            ),
+          ),
+          Container(
+            child: Container(
+              color: Colors.blue,
+              width: 40,
+              height: 40,
+            ),
+          ),
+          Container(
+            child: Container(
+              color: Colors.pink,
+              width: 40,
+              height: 40,
+            ),
+          ),
+          const Spacer(),
+          Container(
+            color: Colors.red,
+            width: 40,
+            height: 40,
+          ),
+        ],
       ),
     );
   }
