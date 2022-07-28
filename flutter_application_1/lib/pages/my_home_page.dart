@@ -11,7 +11,12 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("AppBar MyHomePage"),
       ),
-      body: const Text("MyHomePage"),
+      body: Container(
+        margin: EdgeInsets.only(top: 5, left: 10, right: 10),
+        child: Container(
+          color: Colors.green,
+        ),
+      ),
     );
   }
 }
