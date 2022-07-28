@@ -34,6 +34,9 @@ class MyHomePage extends StatelessWidget {
               height: 40,
             ),
           ),
+          const Spacer(
+            flex: 3,
+          ),
           Container(
             child: Container(
               color: Colors.pink,
@@ -41,7 +44,9 @@ class MyHomePage extends StatelessWidget {
               height: 40,
             ),
           ),
-          const Spacer(),
+          const Spacer(
+            flex: 1,
+          ),
           Container(
             color: Colors.red,
             width: 40,
