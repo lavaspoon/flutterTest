@@ -19,13 +19,15 @@ class LavaHomePage extends StatelessWidget {
                 print('onLongPress ElevatedButton');
               },
               child: const Text('ElevatedButton')),
-          ElevatedButton(
-              onPressed: () {
-                print('ElevatedButton Grey');
-              },
-              style: ElevatedButton.styleFrom(
-                  primary: Colors.grey, onPrimary: Colors.white),
-              child: const Text('ElevatedButton Grey')),
+          Row(
+            children: [
+              ElevatedButton(
+                  onPressed: null,
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.grey, onPrimary: Colors.white),
+                  child: const Text('ElevatedButton Grey')),
+            ],
+          ),
           OutlinedButton(
               onPressed: () {
                 print('OutlinedButton');
