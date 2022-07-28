@@ -11,35 +11,17 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("AppBar MyHomePage"),
       ),
-      body: Row(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            color: Colors.green,
-            width: 40,
-            height: 40,
+          ElevatedButton(
+            onPressed: () {
+              print("ElevatedButton");
+            },
+            child: const Text('plus'),
           ),
-          Container(
-            color: Colors.yellow,
-            width: 40,
-            height: 40,
-          ),
-          Container(
-            color: Colors.blue,
-            width: 40,
-            height: 40,
-          ),
-          Container(
-            color: Colors.pink,
-            child: const Text("어떤 값이여도"),
-          ),
-          const Expanded(
-            child: Text('asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadsfadsf'),
-          ),
-          Container(
-            color: Colors.red,
-            width: 40,
-            height: 40,
-          ),
+          Center(child: Text('0')),
         ],
       ),
     );
