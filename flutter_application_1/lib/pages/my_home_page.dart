@@ -14,38 +14,26 @@ class MyHomePage extends StatelessWidget {
       body: Row(
         children: [
           Container(
-            child: Container(
-              color: Colors.green,
-              width: 40,
-              height: 40,
-            ),
+            color: Colors.green,
+            width: 40,
+            height: 40,
           ),
           Container(
-            child: Container(
-              color: Colors.yellow,
-              width: 40,
-              height: 40,
-            ),
+            color: Colors.yellow,
+            width: 40,
+            height: 40,
           ),
           Container(
-            child: Container(
-              color: Colors.blue,
-              width: 40,
-              height: 40,
-            ),
-          ),
-          const Spacer(
-            flex: 3,
+            color: Colors.blue,
+            width: 40,
+            height: 40,
           ),
           Container(
-            child: Container(
-              color: Colors.pink,
-              width: 40,
-              height: 40,
-            ),
+            color: Colors.pink,
+            child: const Text("어떤 값이여도"),
           ),
-          const Spacer(
-            flex: 1,
+          const Expanded(
+            child: Text('asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadsfadsf'),
           ),
           Container(
             color: Colors.red,
