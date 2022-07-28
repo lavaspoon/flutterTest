@@ -24,7 +24,9 @@ class LavaHomePage extends StatelessWidget {
               ElevatedButton(
                   onPressed: null,
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.grey, onPrimary: Colors.white),
+                      primary: Colors.grey,
+                      onPrimary: Colors.white,
+                      onSurface: Colors.purple),
                   child: const Text('ElevatedButton Grey')),
             ],
           ),
@@ -42,10 +44,14 @@ class LavaHomePage extends StatelessWidget {
               },
               child: const Text('TextButton')),
           GestureDetector(
-              onTap: () {
-                print('GestureDetector');
-              },
-              child: const Text('GestureDetector')),
+            onTap: () {
+              print('GestureDetector');
+            },
+            child: Container(
+              color: Colors.yellow,
+              height: 100,
+            ),
+          ),
         ],
       ),
     );
